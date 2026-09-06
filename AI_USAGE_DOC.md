@@ -69,3 +69,38 @@
 - **Prompt supplied:** "Fix the unhandled `/predict` exception caused by incompatible `int64` input values for MLflow signature columns declared as `double`."
 - **Use:** Updated the FastAPI request model so `trestbps`, `chol`, and `thalach` are emitted as floating-point values for model inference.
 - **Shareable conversation:** Not available; retain a PDF copy of this conversation if submission requirements require one.
+
+## 2026-09-06 (SHAP impact documentation)
+
+- **AI tool:** GitHub Copilot
+- **Prompt supplied:** "Update README with the features that have least impact on predicting whether a patient has heart disease, using the supplied mean absolute SHAP values."
+- **Use:** Added the ranked `fbs`, `age`, and `chol` SHAP results and an interpretation to the README.
+- **Shareable conversation:** Not available; retain a PDF copy of this conversation if submission requirements require one.
+
+## 2026-09-06 (fairness results documentation)
+
+- **AI tool:** GitHub Copilot
+- **Prompt supplied:** "Include the supplied age-group fairness results in the README and state that the model does not demonstrate fairness."
+- **Use:** Added the age-group accuracy, precision, and recall table and its fairness conclusion to the README.
+- **Shareable conversation:** Not available; retain a PDF copy of this conversation if submission requirements require one.
+
+## 2026-09-06 (input drift results documentation)
+
+- **AI tool:** GitHub Copilot
+- **Prompt supplied:** "Document that input drift was not found using the supplied training data, incoming data, alpha, feature count, and drift summary."
+- **Use:** Added the input-drift evaluation sources, parameters, results, and artifact paths to the README.
+- **Shareable conversation:** Not available; retain a PDF copy of this conversation if submission requirements require one.
+
+## 2026-09-06 (stress test results documentation)
+
+- **AI tool:** GitHub Copilot
+- **Prompt supplied:** "Include the supplied wrk stress-test results for the `/predict` endpoint in the README."
+- **Use:** Added the load-test configuration, throughput, latency, transfer, and socket-error results to the README.
+- **Shareable conversation:** Not available; retain a PDF copy of this conversation if submission requirements require one.
+
+## 2026-09-06 (repository file utility guide)
+
+- **AI tool:** GitHub Copilot
+- **Prompt supplied:** "Include the utility of each file in the repository README."
+- **Use:** Added grouped descriptions for project files, tests, deployment manifests, documentation, source data, and generated artifacts.
+- **Shareable conversation:** Not available; retain a PDF copy of this conversation if submission requirements require one.
