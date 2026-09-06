@@ -1,0 +1,8 @@
+{
+  "training_data": "data/data.csv",
+  "incoming_data": "artifacts/observability/random_100_inputs.csv",
+  "alpha": 0.05,
+  "features_checked": 13,
+  "drifted_features": [],
+  "drift_detected": false
+}

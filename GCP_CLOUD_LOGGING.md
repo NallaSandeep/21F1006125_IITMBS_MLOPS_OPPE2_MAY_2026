@@ -13,7 +13,7 @@ GKE captures container standard output in Cloud Logging automatically. After the
 service is deployed and exposed, submit 100 individual requests:
 
 ```bash
-export PREDICTION_API_URL="http://LOAD_BALANCER_IP/predict"
+export PREDICTION_API_URL="http://136.111.70.98:80/predict"
 python per_sample_predictions.py
 ```
 
