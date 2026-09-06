@@ -136,11 +136,11 @@ class HeartDiseaseRequest(BaseModel):
     age: int = Field(ge=1)
     gender: Literal[0, 1]
     cp: int = Field(ge=0, le=3)
-    trestbps: int = Field(ge=0)
-    chol: int = Field(ge=0)
+    trestbps: float = Field(ge=0)
+    chol: float = Field(ge=0)
     fbs: Literal[0, 1]
     restecg: int = Field(ge=0, le=2)
-    thalach: int = Field(ge=0)
+    thalach: float = Field(ge=0)
     exang: Literal[0, 1]
     oldpeak: float = Field(ge=0)
     slope: int = Field(ge=0, le=2)

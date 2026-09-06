@@ -62,3 +62,10 @@
 - **Prompt supplied:** "Please change other files according to HeartDiseaseTrainingAndPrediction.ipynb"
 - **Use:** Aligned the production artifacts with the notebook's heart-disease schema, preprocessing, logistic-regression model, and inference payload.
 - **Shareable conversation:** Not available; retain a PDF copy of this conversation if submission requirements require one.
+
+## 2026-09-06 (MLflow inference schema fix)
+
+- **AI tool:** GitHub Copilot
+- **Prompt supplied:** "Fix the unhandled `/predict` exception caused by incompatible `int64` input values for MLflow signature columns declared as `double`."
+- **Use:** Updated the FastAPI request model so `trestbps`, `chol`, and `thalach` are emitted as floating-point values for model inference.
+- **Shareable conversation:** Not available; retain a PDF copy of this conversation if submission requirements require one.

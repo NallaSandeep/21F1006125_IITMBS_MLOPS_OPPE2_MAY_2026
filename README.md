@@ -62,4 +62,4 @@ wrk.body = [[
 wrk.headers["Content-Type"] = "application/json"
 ```
 * Run the following command
-```wrk -t4 -c1000 -d30s  -s stress-test.lua http://34.27.94.189:80/predict```
+```wrk -t4 -c1000 -d30s  -s stress-test.lua http://136.111.70.98:80/predict```
