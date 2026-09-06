@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: oppe2-heart-disease-prediction-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: oppe2-heart-disease-prediction-service
+  template:
+    metadata:
+      labels:
+        app: oppe2-heart-disease-prediction-service
+    spec:
+      serviceAccountName: oppe2-heart-disease-prediction-service
+      containers:
+      - name: oppe2-heart-disease-prediction-service
+        image: us-central1-docker.pkg.dev/project-eada5958-ab21-4f76-b53/docker-images-repo/oppe2-heart-disease-prediction-service:latest
+        ports:
+        - containerPort: 8200
+        startupProbe:
+          httpGet:
+            path: /live_check
+            port: 8200
+          periodSeconds: 15
+        readinessProbe:
+          httpGet:
+            path: /ready_check
+            port: 8200
+          initialDelaySeconds: 30
+          periodSeconds: 30
+        livenessProbe:
+          httpGet:
+            path: /live_check
+            port: 8200
+          initialDelaySeconds: 45
+          periodSeconds: 30
+        resources:
+          requests:
+            cpu: "1000m"
+            memory: "1Gi"
+          limits:
+            cpu: "5000m"
+            memory: "2Gi"

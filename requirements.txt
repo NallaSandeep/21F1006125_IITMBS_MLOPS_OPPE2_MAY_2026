@@ -1,0 +1,14 @@
+pandas
+scikit-learn
+fairlearn
+shap
+matplotlib
+evidently
+pytest
+mlflow
+fastapi
+uvicorn
+opentelemetry-exporter-gcp-trace
+opentelemetry-api
+opentelemetry-sdk
+opentelemetry-instrumentation-fastapi
